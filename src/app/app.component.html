@@ -1,0 +1,9 @@
+<!-- <section>
+    <app-dropdown [selectOptions]="option"></app-dropdown>
+</section> -->
+<form [formGroup]="form" (ngSubmit)="submit(model)">
+    <formly-form [model]="model" [fields]="fields" [form]="form" >
+            <button type="submit" class="btn btn-primary submit-button">Submit</button>
+    </formly-form>
+</form>
+<!-- {{ model | json}} -->

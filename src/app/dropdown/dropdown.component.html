@@ -1,0 +1,19 @@
+<section class="parent" >
+  
+  <h3>
+    {{ label }}
+  </h3>
+    <select [name]="name"   (change)="handleSelect($event.target.value)"  >
+        <option value=""></option>
+        <option *ngFor="let option of selectOptions" [value]="option.id">
+            {{ option.name }}
+        </option>
+    </select>
+</section>
+
+<!-- <section class="child" *ngIf="selected && selected.children.length >0">
+    <app-dropdown [selectedList]="selectedList" [name]="name"  [label]="labels" [selectOptions]="selected.children"></app-dropdown>
+</section> -->
+<section class="child" *ngIf="selected && selected.length >0 && prev.length === selected.length">
+    <app-dropdown [prev]="prev" [selectedList]="selectedList" [name]="name"  [label]="labels" [selectOptions]="selected"></app-dropdown>
+</section>
