@@ -1,5 +1,11 @@
 # Select Cascade
 
+Select Cascade is based on [Ng Formly Library](https://ngx-formly.github.io/ngx-formly/).
+
+Create a dynamic select cascaded with n^n relationship between parent-child-grandchildren and so on.
+
+Check out the [Demo Dropdown Cascade](https://dropdown-cascade.herokuapp.com/)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.1.
 
 ## Technologies used
@@ -16,7 +22,7 @@ Clone the repo
 ```
 git clone https://github.com/Choukouali2014/dropdown-cascade.git
 
-Run `cd ropdown-cascade` to go inside the directory
+Run `cd dropdown-cascade` to go inside the directory
 ```
 Install dependencies
 ```
